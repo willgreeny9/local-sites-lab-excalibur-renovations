@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
  * dismiss → remount (refresh) stays closed → reopen via sticky "About this sample" → dismiss again.
  */
 test('dismiss → remount → reopen → dismiss again', () => {
-  const storageKey = 'excalibur-renovations-concept-notice-dismissed-v4';
+  const storageKey = 'excalibur-renovations-concept-notice-dismissed-v5';
   const store = new Map();
 
   const localStorage = {

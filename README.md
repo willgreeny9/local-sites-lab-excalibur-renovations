@@ -69,7 +69,7 @@ npm run build
 - Metadata `robots: { index: false, follow: false }`
 - `robots.ts` disallows all crawlers
 - Sticky Local Sites Lab attribution bar on every page
-- First-visit ConceptNotice modal (`excalibur-renovations-concept-notice-dismissed-v4`)
+- First-visit ConceptNotice modal (`excalibur-renovations-concept-notice-dismissed-v5`)
 - Demo enquiry form is **not** connected; use verified tel/mailto
 - British English; no invented ratings, prices or testimonials
 - Gas Safe / Oftec labelled as current-site claims

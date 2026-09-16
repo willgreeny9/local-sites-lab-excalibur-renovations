@@ -3,6 +3,7 @@ import { Libre_Baskerville, Outfit } from "next/font/google";
 import { ConceptNotice } from "@/components/ConceptNotice";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { business } from "@/lib/business";
 import "./globals.css";
 
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en-GB" className={`${outfit.variable} ${baskerville.variable}`}>
       <body style={{ fontFamily: "var(--font-outfit), var(--font)" }}>
+        <ScrollToTop />
         <Header />
         <main>{children}</main>
         <Footer />

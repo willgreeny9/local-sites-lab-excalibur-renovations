@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const storageKey = "excalibur-renovations-concept-notice-dismissed-v4";
+const storageKey = "excalibur-renovations-concept-notice-dismissed-v5";
 
 export function ConceptNotice() {
   const [open, setOpen] = useState(false);

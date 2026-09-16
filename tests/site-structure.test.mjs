@@ -82,7 +82,7 @@ test('independent concept notice has required disclosure, sticky bar and dismiss
   assert.doesNotMatch(source, /event\.target === event\.currentTarget/);
   assert.doesNotMatch(source, /Tip:/i);
   assert.doesNotMatch(source, /click outside/i);
-  assert.match(source, /excalibur-renovations-concept-notice-dismissed-v4/);
+  assert.match(source, /excalibur-renovations-concept-notice-dismissed-v5/);
 
   // Mount-gated open: no localStorage in useState initializer
   assert.doesNotMatch(source, /useState\(\s*\(\s*\)\s*=>/);
@@ -280,6 +280,7 @@ test('create-next-app starter SVGs and unused page.module.css are removed', () =
 test('layout mounts sticky concept notice with header and footer', () => {
   const layout = read('app/layout.tsx');
   assert.match(layout, /ConceptNotice/);
+  assert.match(layout, /ScrollToTop/);
   assert.match(layout, /Header/);
   assert.match(layout, /Footer/);
 });
