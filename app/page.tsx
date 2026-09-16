@@ -42,26 +42,11 @@ export default function Home() {
         <div className="hero-split">
           <div className="hero-panel">
             <p className="eyebrow">Bishop&apos;s Stortford · Hertfordshire</p>
-            <h1 id="home-hero-title">
-              Renovations, building and plumbing — from a team of ten.
-            </h1>
-            <p>
-              Established in {business.established}, {business.name} provides building and plumbing
-              services for domestic and commercial clients in Bishop&apos;s Stortford. Request a free
-              quotation for extensions, kitchens, bathrooms, heating and wider renovations.
-            </p>
+            <h1 id="home-hero-title">Renovations, building and plumbing</h1>
             <div className="hero-actions">
               <Link className="button" href="/contact">
                 Request a free quotation
               </Link>
-              <a className="button button-secondary" href={`tel:${business.phoneMobileTel}`}>
-                Call {business.phoneMobileDisplay}
-              </a>
-            </div>
-            <div className="hero-facts" aria-label="Quick facts">
-              <span className="hero-fact">Est. {business.established}</span>
-              <span className="hero-fact">Team of ten (stated)</span>
-              <span className="hero-fact">Gas Safe &amp; Oftec (stated)</span>
             </div>
           </div>
           <div className="hero-media">
@@ -79,6 +64,21 @@ export default function Home() {
 
       <CredentialsStrip />
       <SocialProof />
+
+      <section className="section section-tint" aria-labelledby="home-intro-title">
+        <div className="shell">
+          <div className="section-intro">
+            <p className="eyebrow">About the firm</p>
+            <h2 id="home-intro-title">Building and plumbing for wider renovations</h2>
+            <p>
+              Established in {business.established}, {business.name} provides building and plumbing
+              services for domestic and commercial clients in Bishop&apos;s Stortford. Request a free
+              quotation for extensions, kitchens, bathrooms, heating and wider renovations.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <QuoteBand />
       <ProjectPairs />
 
