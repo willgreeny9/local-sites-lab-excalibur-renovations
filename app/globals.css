@@ -1308,15 +1308,6 @@ p {
   font-weight: 600;
 }
 
-/* Hero photo frame only: preserve the full copy block. */
-.hero-media {
-  max-height: min(68vh, 32rem);
-  overflow: hidden;
-}
-.hero-media img {
-  object-fit: cover;
-  max-height: 100%;
-}
 
 /* UX short-photo hero: keep the image column compact; never clamp the board. */
 .hero, .hero-split { overflow: visible; }
